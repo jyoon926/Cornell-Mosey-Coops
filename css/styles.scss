@@ -1,11 +1,11 @@
 $accent: #869988;
 $dark: #061727;
 * {
-    font-family: 'runda', sans-serif;
+    font-family: 'neue-haas-grotesk-display', sans-serif;
     text-decoration: none;
     margin: 0;
     padding: 0;
-    font-weight: 400 !important;
+    font-weight: 500 !important;
     color: $dark;
 }
 html {
@@ -20,21 +20,14 @@ body {
     flex-direction: column;
     padding: 100px;
     box-sizing: border-box;
-    color: white;
     margin: 0;
     text-align: center;
+    background: #000;
     h1 {
         font-size: 6em;
         line-height: 1;
         margin-bottom: 50px;
-    }
-    .text {
-        width: 100%;
-        max-width: 1000px;
-        p {
-            font-size: 1em;
-            line-height: 1.5;
-        }
+        color: white;
     }
 }
 .pageWrap {
@@ -96,7 +89,7 @@ section {
     width: 100%;
     div {
         width: 100%;
-        overflow-x: scroll;
+        overflow-x: auto;
         white-space: nowrap;
     }
     h2 {
@@ -126,6 +119,9 @@ section {
     p {
         font-size: 1em;
         line-height: 1.5;
+        b {
+            font-weight: 700 !important;
+        }
     }
 }
 @media screen and (max-width: 800px) {
@@ -145,5 +141,13 @@ section {
     .pageWrap {
         padding: 0 30px;
         box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 450px) {
+    .houses .cont {
+        flex-direction: column;
+        .col {
+            width: 100%;
+        }
     }
 }
