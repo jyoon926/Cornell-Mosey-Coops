@@ -1,8 +1,149 @@
-$accent: #ff6f61;
+$accent: #869988;
+$dark: #061727;
 * {
-    font-family: 'neue-haas-grotesk-display', sans-serif;
+    font-family: 'runda', sans-serif;
     text-decoration: none;
     margin: 0;
     padding: 0;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
+    color: $dark;
+}
+html {
+    font-size: 18px;
+    overflow-x: hidden;
+}
+body {
+}
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    box-sizing: border-box;
+    color: white;
+    margin: 0;
+    text-align: center;
+    h1 {
+        font-size: 6em;
+        line-height: 1;
+        margin-bottom: 50px;
+    }
+    .text {
+        width: 100%;
+        max-width: 1000px;
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+    }
+}
+.pageWrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+section {
+    box-sizing: border-box;
+    padding: 100px 0 0 0;
+}
+.info {
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+}
+.houses {
+    h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    .cont {
+        display: flex;
+        flex-direction: row;
+        .col {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            .house {
+                margin-bottom: 20px;
+                a {
+                    font-size: 1.25em;
+                    border-bottom: 2px solid $dark;
+                    transition-duration: .3s;
+                    &:hover {
+                        color: $accent;
+                        border-bottom: 2px solid $accent;
+                    }
+                }
+                p {
+                    padding-top: 10px;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+.rates {
+    width: 100%;
+    div {
+        width: 100%;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+    h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    table {
+        width: 813px;
+    }
+    table, td {
+        border: 1px solid $dark;
+        border-collapse: collapse;
+    }
+    tr, td {
+        padding: 10px;
+    }
+    .titles td {
+        font-weight: 700 !important;
+    }
+}
+.contact {
+    padding-bottom: 100px;
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1em;
+        line-height: 1.5;
+    }
+}
+@media screen and (max-width: 800px) {
+    section {
+        padding: 60px 0 0 0;
+    }
+    html {
+        font-size: 16px;
+    }
+    .hero {
+        padding: 100px 30px;
+        .title {
+            font-size: 3em;
+            text-align: left;
+        }
+    }
+    .pageWrap {
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
 }

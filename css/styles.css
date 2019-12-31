@@ -1,8 +1,196 @@
 * {
-  font-family: 'neue-haas-grotesk-display', sans-serif;
+  font-family: 'runda', sans-serif;
   text-decoration: none;
   margin: 0;
   padding: 0;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
+  color: #061727;
+}
+
+html {
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+.hero {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 6em;
+  line-height: 1;
+  margin-bottom: 50px;
+}
+
+.hero .text {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.hero .text p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.pageWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  padding: 0 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+section {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 100px 0 0 0;
+}
+
+.info h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.info p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.houses h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.houses .cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.houses .cont .col {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.houses .cont .col .house {
+  margin-bottom: 20px;
+}
+
+.houses .cont .col .house a {
+  font-size: 1.25em;
+  border-bottom: 2px solid #061727;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.houses .cont .col .house a:hover {
+  color: #869988;
+  border-bottom: 2px solid #869988;
+}
+
+.houses .cont .col .house p {
+  padding-top: 10px;
+  font-size: 1em;
+}
+
+.rates {
+  width: 100%;
+}
+
+.rates div {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+.rates h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.rates table {
+  width: 813px;
+}
+
+.rates table, .rates td {
+  border: 1px solid #061727;
+  border-collapse: collapse;
+}
+
+.rates tr, .rates td {
+  padding: 10px;
+}
+
+.rates .titles td {
+  font-weight: 700 !important;
+}
+
+.contact {
+  padding-bottom: 100px;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 800px) {
+  section {
+    padding: 60px 0 0 0;
+  }
+  html {
+    font-size: 16px;
+  }
+  .hero {
+    padding: 100px 30px;
+  }
+  .hero .title {
+    font-size: 3em;
+    text-align: left;
+  }
+  .pageWrap {
+    padding: 0 30px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
